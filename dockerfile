@@ -22,7 +22,8 @@ WORKDIR /var/www/html
 COPY . .
 
 # Thiết lập quyền cho các thư mục cần thiết
-RUN chown -R www-data:www-data /var/www/html/ 
+RUN chown -R www-data:www-data /var/www/html/Laravel-ecom/storage /var/www/html/Laravel-ecom/bootstrap/cache
+
 # Expose cổng mà ứng dụng chạy
 EXPOSE 80
 EXPOSE 8000
